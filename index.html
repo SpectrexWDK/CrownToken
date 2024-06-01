@@ -9,15 +9,17 @@
 </head>
 <body>
 	<header>
-		<a href="#Main"><h2>Главная</h2></a>
-		<a href="#Data"><h2>Обзор</h2></a>
-		<a href=""><h2>Информация</h2></a>
-		<a href=""><h2>Подключение</h2></a>
+		<div class="NavList">
+			<a href="#Main"><h2>Главная</h2></a>
+			<a href="#Data"><h2>Обзор</h2></a>
+			<a href="#Info"><h2>Информация</h2></a>
+			<a href="#Contacts"><h2>Контакты</h2></a>
+		</div>
 	</header>
 
 	<section class="MainSection" id="Main">
 		<div id="btn">
-			<button><a onclick="addTokenFunction()"><h3>Web3!</h3></button></a>
+			<button><a><h3>Web3!</h3></button></a>
 		</div>
 	</section>
 
@@ -30,10 +32,41 @@
 		<h2>Максимальный оборот - 1 000 000 000<img src="images/CrownToken.png"></h2>
 	</section> -->
 
+	<br id="Data">
+	<section class="DataSection"> 
+		<h1>Обзор</h1>
+		<div class="DataBlock">
+			<div class="DataTable">
+				<h1>Основное</h1>
+				<h2>Блокчейн - <img src="images/bsc.jpg" id="circle">Binance Smart Chain</h2>
+				<h2>Название - RXDCROWN</h2>
+				<h2>Символ - CROWN</h2>
+				<h1>Информация контракта</h1>
+				<h2>Адрес контракта - 0x79b951fefc4ce499e517bc9337a58bd6b7383f2c <!-- <img id="copy" id="circle" src="images/copy.png" onclick="CopyAddress()" title="Скопировать адрес"> --></h2>
+				<h2>Количество нулей - 18</h2>
+				<h2>Максимальный оборот - 1,000,000,000</h2>
+				<h2>Текущий оборот - 0</h2>
+				<h2>Держатели - 1</h2>
+				<h2>Транзакции - 1</h2>
+			</div>
+		</div>
+	</section>
 
-	<script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
-    <script src="script.js">
+	<section class="InfoSection" id="Info">
+	</section>
 
+	<section class="СontactsSection" id="Contacts">
+		<h1>Контакты</h1>
+		<div class="СontactsBlock">
+			<div class="Сontacts">
+				<button class="ContactButton" id="Blue"><a href="https://t.me/rxdcrown" target="_blank">Telegram</a></button>
+				<button class="ContactButton" id="Red"><a href="mailto:spectrexwdk@gmail.com">Email</a></button>
+			</div>
+		</div>
+	</section>
+
+
+    <script>
     </script>
 </body>
 </html>
